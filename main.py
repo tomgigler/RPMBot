@@ -143,7 +143,12 @@ async def on_voice_state_update(member, before, after):
             graceperiods[873204571298742323] = time()
             await channel.send ("Who let the Frog out of its cage? Oh, nevermind, it's Ribbit!")
             await channel.send(file=discord.File("Gifs/Ribbit.gif"))
-            
+
+#############################
+## Instead of having the initial values for the graceperiods array hard-coded here
+## it would be better to read them in from a file
+## that's step one
+#############################
 graceperiods = {
     591388257992835093 : 0,
     243879095711170572 : 0,
